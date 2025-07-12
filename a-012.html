@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Validación ASEFILA – A-012</title>
+  <title>Credencial Vencida – A-012</title>
   <style>
     body {
       font-family: sans-serif;
@@ -15,9 +15,29 @@
       border: 2px solid #c5a253;
       padding: 30px;
       border-radius: 10px;
+      position: relative;
     }
     h1 {
       color: #c5a253;
+    }
+    .vencida {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .sello {
+      position: absolute;
+      top: 10px;
+      right: -20px;
+      transform: rotate(-20deg);
+      background-color: red;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 8px 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
     }
     a {
       text-decoration: none;
@@ -27,13 +47,15 @@
 </head>
 <body>
   <div class="box">
+    <div class="sello">CREDENCIAL VENCIDA</div>
     <img src="https://raw.githubusercontent.com/DiegoRojo88/asefila-validacion/main/LOGO%20ASEFILA.png" alt="Logo ASEFILA" width="180" /><br /><br />
-    <h1>Miembro activo de ASEFILA</h1>
+    <h1>Miembro de ASEFILA</h1>
     <p><strong>Nombre:</strong> Arturo Téllez González</p>
     <p><strong>ID ASEFILA:</strong> A-012</p>
     <p><strong>Correo:</strong> <a href="mailto:tellezglzarturo@gmail.com">tellezglzarturo@gmail.com</a></p>
     <p><strong>Tipo de cédula:</strong> A1</p>
-    <p><strong>Vigencia:</strong> hasta el 23 de junio de 2026</p>
+    <p><strong>Vigencia:</strong> hasta el 23 de junio de 2025</p>
+    <p class="vencida">Esta credencial ya no se encuentra vigente.</p>
   </div>
 </body>
 </html>
